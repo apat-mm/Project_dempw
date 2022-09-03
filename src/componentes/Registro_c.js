@@ -41,7 +41,7 @@ export const Formulario = () => {
 	return (
 		<>
             <h1 className="is">Registrate</h1>
-			<form action="" onSubmit={handleSubmit} className="formulario">
+			<form action="" onSubmit={handleSubmit} className="formulario2">
 				<div>
 					<label htmlFor="nombre">Nombre</label>
 					<input

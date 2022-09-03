@@ -55,7 +55,7 @@ export const Repartidor = () => {
 	return (
 		<>
             <h1 className="is">Registrate como repartidor</h1>
-			<form action="" onSubmit={handleSubmit} className="formulario">
+			<form action="" onSubmit={handleSubmit} className="formulario5">
 				<div>
 					<label htmlFor="repartidor">Nombre</label>
 					<input

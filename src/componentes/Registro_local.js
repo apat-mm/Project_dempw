@@ -46,7 +46,7 @@ export const Local = () => {
 	return (
 		<>
             <h1 className="is">Registra tu local</h1>
-			<form action="" onSubmit={handleSubmit} className="formulario">
+			<form action="" onSubmit={handleSubmit} className="formulario3">
 				<div>
 					<label htmlFor="local">Nombre del Local</label>
 					<input

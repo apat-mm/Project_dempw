@@ -17,7 +17,7 @@ export const Address = () => {
     return (
         <>
             <h1 className="is">Ingresar mi ubicacion</h1>
-            <form action="" onSubmit={handleSubmit} className="formulario">
+            <form action="" onSubmit={handleSubmit} className="formulario4">
                 <div>
                     <label htmlFor="direccion">Direccion</label>
                     <input
