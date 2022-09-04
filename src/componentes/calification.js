@@ -26,7 +26,7 @@ export const Calification =() => {
   const handleMouseLeave = () => {
     setHoverValue(undefined)
   }
-
+  console.log()
 
   return (
     <div style={styles.container} style={styles.background_c}>
@@ -70,7 +70,8 @@ const styles = {
     margin: "30px 0",
     minHeight: 100,
     width: 350,
-    justify_content: "center"
+    justify_content: "center",
+    padding:"30px"
   },
   title:{
     text_align:"center"
