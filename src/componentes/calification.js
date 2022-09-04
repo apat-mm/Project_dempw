@@ -26,7 +26,7 @@ export const Calification =() => {
   const handleMouseLeave = () => {
     setHoverValue(undefined)
   }
-  console.log()
+
 
   return (
     <div style={styles.container} style={styles.background_c}>
