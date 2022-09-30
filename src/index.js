@@ -1,23 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
-import {Registro} from './componentes/Registro'
-import { Search } from './componentes/Search';
-import { Formulario } from './componentes/Registro_c';
-import { Local } from './componentes/Registro_local';
-import { Address } from './componentes/Direccion';
-import { Repartidor } from './componentes/Registro_rep';
-import {Calification} from './componentes/calification';
+// import {Registro} from './componentes/Paginas/Registro'
+// import { Search } from './componentes/Paginas/Search';
+// import { Formulario } from './componentes/Paginas/Registro_c';
+// import { Local } from './componentes/Paginas/Registro_local';
+// import { Address } from './componentes/Paginas/Direccion';
+// import { Repartidor } from './componentes/Paginas/Registro_rep';
+// import {Calification} from './componentes/Paginas/calification';
+import { App } from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Registro/>
+    <App/>
+    {/* <Registro/>
     <Formulario/>
     <Search/>
     <Local/>
     <Address/>
     <Repartidor/>
-    <Calification/>
+    <Calification/> */}
   </>
 );

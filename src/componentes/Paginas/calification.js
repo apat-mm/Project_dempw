@@ -8,8 +8,6 @@ const colors = {
     
 };
 
-
-
 export const Calification =() => {
   const [currentValue, setCurrentValue] = useState(0);
   const [hoverValue, setHoverValue] = useState(undefined);
@@ -29,7 +27,7 @@ export const Calification =() => {
 
 
   return (
-    <div style={styles.container} style={styles.background_c}>
+    <div style={styles.container}>
       <h2 style={styles.title}> Califícanos </h2>
       <div style={styles.stars}>
         {stars.map((_, index) => {
@@ -67,11 +65,9 @@ const styles = {
     background:"white",
     margin: "30px 0",
     padding: "10px",
-    margin: "30px 0",
     minHeight: 100,
     width: 350,
     justify_content: "center",
-    padding:"30px"
   },
   title:{
     text_align:"center"
