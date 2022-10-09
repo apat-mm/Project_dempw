@@ -1,9 +1,14 @@
 import React from 'react'
+import ShoppingCart from '../ItemCart/shoppingCart'
+import Navbar from '../Navegacion/Navbar'
+import { Repartidor } from './Registro_rep'
 
 const Home = () => {
   return (
     <div>
-        <h2>Ingresar mi ubicación</h2>
+        <Navbar/>
+        <Repartidor/>
+        {/* <ShoppingCart/> */}
     </div>
   )
 }

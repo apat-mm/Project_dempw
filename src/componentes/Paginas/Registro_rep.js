@@ -1,24 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import repar from '../img/repar.png'
+import rappi from '../img/rappi.png'
 
 export const Repartidor = () => {
 	const [inputName, changeInputName] = useState('');
-    const [inputLastName, changeInputLastName] = useState('');
-    const [inputCorreo, changeInputCorreo] = useState('');
-    const [inputContraseña, changeInputContraseña] = useState('');
-    const [inputCity, changeInputCity] = useState('');
+	const [inputLastName, changeInputLastName] = useState('');
+	const [inputCorreo, changeInputCorreo] = useState('');
+	const [inputContraseña, changeInputContraseña] = useState('');
+	const [inputCity, changeInputCity] = useState('');
 	const [inputNumber, changeInputNumber] = useState('');
-    const [inputCheckBox, changeInputCheck] = useState('')
+	const [inputCheckBox, changeInputCheck] = useState('')
 
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
 		console.log('Registro del local Enviado :D');
-        console.log((inputName));
-        console.log((inputLastName));
-        console.log((inputContraseña));
-        console.log((inputCity));
-        console.log((inputNumber));
+		console.log((inputName));
+		console.log((inputLastName));
+		console.log((inputContraseña));
+		console.log((inputCity));
+		console.log((inputNumber));
 	}
 
 	// Funcion que se encarga de cambiar el estado del inputNombre
@@ -26,134 +28,153 @@ export const Repartidor = () => {
 		changeInputName(e.target.value);
 	}
 
-    const handleInputLast = (e) => {
+	const handleInputLast = (e) => {
 		changeInputLastName(e.target.value);
 	}
 
-    const handleInputCorreo = (e) => {
+	const handleInputCorreo = (e) => {
 		changeInputCorreo(e.target.value);
 	}
 
-    const handleContraseña = (e) => {
+	const handleContraseña = (e) => {
 		changeInputContraseña(e.target.value);
 	}
 
-    const handleInputCity = (e) => {
+	const handleInputCity = (e) => {
 		changeInputCity(e.target.value);
 	}
 
-    const handleInputNumber = (e) => {
+	const handleInputNumber = (e) => {
 		changeInputNumber(e.target.value);
 	}
 
-    const handleCheckBox = (e) => {
-        changeInputCheck(e.target.checked)
-    }
-	
-	
+	const handleCheckBox = (e) => {
+		changeInputCheck(e.target.checked)
+	}
+
+
 
 	return (
 		<>
-            <h1 className="is">Registrate como repartidor</h1>
-			<form action="" onSubmit={handleSubmit} className="formulario5">
-				<div>
-					<label htmlFor="repartidor">Nombre</label>
-					<input
-						type="text"
-						name="repartidor"
-						placeholder="Ingresa tu nombre"
-						id="repartidor"
-						value={inputName}
-						onChange={handleInputName}
-					/>
+			<div className="container">
+				<div className="row row-cols-2">
+					<div className="col">
+						<img className="imgre" src={repar} />
+					</div>
+					<div className="col" style={{ padding: '30px 40px 0px 100px' }}>
+						<br />
+						<br />
+						<img className="img2" style={{ padding: '20px,100px,0px,50px' }} src={rappi} />
+						<br/>
+						<h1 style={{ color: '#FF5C00', fontWeight: 'bold', fontSize: '50px', textAlign: 'center' }}>¡Regístrate ahora!</h1>
+						<br/>
+						<p style={{ color: '#494949', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', lineHeight: '43px' }}>Y descubre todos los beneficios que tenemos para ti</p>
+					</div>
 				</div>
+			</div>
 
-                <div>
-					<label htmlFor="apellido">Apellido</label>
-					<input
-						type="text"
-						name="apellido"
-						placeholder="Ingresa tu apellido"
-						id="apellido"
-						value={inputLastName}
-						onChange={handleInputLast}
-					/>
-				</div>
+			<div className="container" style={{ background: '#FFF4F4', padding: '20px ' }}>
+				<div className="row">
+					<div className="col cont cen">
+						<form onSubmit={handleSubmit}>
+							<div style={{ margin: '10px 0px 0px 0px' }}>
+								<label className="border1">Nombre</label>
+								<br />
+								<input className="inpr border"
+									type="text"
+									name="repartidor"
+									placeholder=" - - - - -"
+									id="repartidor"
+									value={inputName}
+									onChange={handleInputName}
+								/>
+							</div>
+							<div style={{ margin: '10px 0px 0px 0px' }}>
+								<label className="border1">Correo</label>
+								<br />
+								<input className="inpr border"
+									type="text"
+									name="correo"
+									placeholder=" - - - - -"
+									id="correo"
+									value={inputCorreo}
+									onChange={handleInputCorreo}
+								/>
+							</div>
+							<div style={{ margin: '10px 0px 0px 0px' }}>
+								<label className="border1">Contraseña</label>
+								<br />
+								<input className="inpr border"
+									type="text"
+									name="contraseña"
+									placeholder=" * * * * *"
+									id="contraseña"
+									value={inputContraseña}
+									onChange={handleContraseña}
+								/>
+							</div>
+						</form>
+					</div>
+					<div className="col cont cen" style={{ padding: '0px 20px 0px 0px' }}>
+						<div style={{ margin: '10px 0px 0px 0px' }}>
+							<label className="border1">Apellido</label>
 
-                <div>
-					<label htmlFor="correo">Correo</label>
-					<input
-						type="text"
-						name="correo"
-						placeholder="Correo"
-						id="correo"
-						value={inputCorreo}
-						onChange={handleInputCorreo}
-					/>
-				</div>
+							<input className="inpr border"
+								type="text"
+								name="apellido"
+								placeholder=" - - - - -"
+								id="apellido"
+								value={inputLastName}
+								onChange={handleInputLast}
+							/>
+						</div>
+						<div style={{ margin: '10px 0px 0px 0px' }}>
+							<label className="border1">Ciudad</label>
 
-                <div>
-					<label htmlFor="contraseña">Contraseña</label>
-					<input
-						type="text"
-						name="contraseña"
-						placeholder="Ingresa una contraseña"
-						id="contraseña"
-						value={inputContraseña}
-						onChange={handleContraseña}
-					/>
+							<input className="inpr border"
+								type="text"
+								name="city"
+								placeholder=" - - - - -"
+								id="city"
+								value={inputCity}
+								onChange={handleInputCity}
+							/>
+						</div>
+						<div style={{ margin: '10px 0px 0px 0px' }}>
+							<label className="border1">Numero telefonico</label>
+							<br />
+							<input className="inpr border"
+								type="number"
+								name="number"
+								placeholder=" 313...."
+								id="Number"
+								value={inputNumber}
+								onChange={handleInputNumber}
+							/>
+						</div>
+					</div>
 				</div>
-
-                <div>
-					<label htmlFor="city">Ciudad</label>
-					<input
-						type="text"
-						name="city"
-						placeholder="Ingresa la ciudad en la que te encuentras"
-						id="city"
-						value={inputCity}
-						onChange={handleInputCity}
-					/>
-				</div>
-
-                <div>
-					<label htmlFor="number">Numero telefonico</label>
-					<input
-						type="number"
-						name="number"
-						placeholder="Ingresa tu numero telefonico"
-						id="Number"
-						value={inputNumber}
-						onChange={handleInputNumber}
-					/>
-				</div>
-
-                <div>
-					<label htmlFor="checkBox">Aceptas los terminos y condiciones</label>
-					<input
-						type="checkbox"
-						name="terminos"
-						id="terminos"
-						value={inputCheckBox}
-						onChange={handleCheckBox}
-					/>
-				</div>
-            
-				<button type="submit">Registrarme</button>
-                <h1 className="is">¿Cómo empezar a repartir?</h1>
-                <br/>
-                <h3>
-                    01 Descarga la aplicación, ingresa tus datos básicos y carga tus documentos
-                </h3>
-                <br/>
-                <h3>
-                    02 Indica el día y la hora que te quieres conectar
-                </h3>
-                <br/>
-                <h3>
-                    03 Conéctate para recibir tus pedidos y realizar tus primeras entregas
-                </h3>
-			</form>
+				<br/>
+				<p className='parr' style={{color:'#3B4754'}}>Al registrarte estás aceptando nuestros términos y condiciones</p>
+				<button type="button" className="btn btn-outline-light reg">Registrarme</button>
+			</div>
+			<br/>
+			<div className="container" style={{ background: '#FFF4F4', padding: '20px ' }}>
+				<br/>
+			<h1 style={{ color: '#FF5C00', fontWeight: 'bold', fontSize: '40px', textAlign: 'center' }}>¿CÓMO EMPEZAR A REPARTIR?</h1>
+			<br />
+			<h3>
+				<h3 style={{color: '#FF5C00', fontWeight: 'bold'}}>01</h3> Descarga la aplicación, ingresa tus datos básicos y carga tus documentos
+			</h3>
+			<br />
+			<h3>
+				02 Indica el día y la hora que te quieres conectar
+			</h3>
+			<br />
+			<h3>
+				03 Conéctate para recibir tus pedidos y realizar tus primeras entregas
+			</h3>
+			</div>	
 		</>
 	);
 }
