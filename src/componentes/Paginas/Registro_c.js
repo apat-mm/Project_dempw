@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import reg from '../img/reg.png'
+import reg from '../assets/img/reg.png'
 import FirebaseConfig from '../../firebase/firebaseConfig';
 
 export const Formulario = () => {

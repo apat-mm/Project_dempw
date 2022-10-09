@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import FirebaseConfig from '../../firebase/firebaseConfig';
 //import { getAuth, signInWithPopup, GithubAuthProvider } from "firebase/auth";
-import login from '../img/login.jpg'
-import rappi from '../img/rappi.png'
+import login from '../assets/img/login.jpg'
+import rappi from '../assets/img/rappi.png'
+import Footer from '../Navegacion/Footer';
 
 export const Registro = () => {
 
@@ -29,7 +30,7 @@ export const Registro = () => {
 
 	return (
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid" style={{background:'#ffe2d8'}}>
 				<div className="row">
 					<div className="col">
 						<img className="img2" src={rappi} />
@@ -74,6 +75,7 @@ export const Registro = () => {
 					</div>
 				</div>
 			</div>
+			<Footer/>
 		</>
 	);
 }

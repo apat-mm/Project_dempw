@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import repar from '../img/repar.png'
-import rappi from '../img/rappi.png'
+import repar from '../assets/img/repar.png'
+import rappi from '../assets/img/rappi.png'
 
 export const Repartidor = () => {
 	const [inputName, changeInputName] = useState('');
@@ -65,9 +65,9 @@ export const Repartidor = () => {
 						<br />
 						<br />
 						<img className="img2" style={{ padding: '20px,100px,0px,50px' }} src={rappi} />
-						<br/>
+						<br />
 						<h1 style={{ color: '#FF5C00', fontWeight: 'bold', fontSize: '50px', textAlign: 'center' }}>¡Regístrate ahora!</h1>
-						<br/>
+						<br />
 						<p style={{ color: '#494949', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', lineHeight: '43px' }}>Y descubre todos los beneficios que tenemos para ti</p>
 					</div>
 				</div>
@@ -80,7 +80,7 @@ export const Repartidor = () => {
 							<div style={{ margin: '10px 0px 0px 0px' }}>
 								<label className="border1">Nombre</label>
 								<br />
-								<input className="inpr border"
+								<input className="inprr border"
 									type="text"
 									name="repartidor"
 									placeholder=" - - - - -"
@@ -92,7 +92,7 @@ export const Repartidor = () => {
 							<div style={{ margin: '10px 0px 0px 0px' }}>
 								<label className="border1">Correo</label>
 								<br />
-								<input className="inpr border"
+								<input className="inprr border"
 									type="text"
 									name="correo"
 									placeholder=" - - - - -"
@@ -104,8 +104,8 @@ export const Repartidor = () => {
 							<div style={{ margin: '10px 0px 0px 0px' }}>
 								<label className="border1">Contraseña</label>
 								<br />
-								<input className="inpr border"
-									type="text"
+								<input className="inprr border"
+									type="password"
 									name="contraseña"
 									placeholder=" * * * * *"
 									id="contraseña"
@@ -119,7 +119,7 @@ export const Repartidor = () => {
 						<div style={{ margin: '10px 0px 0px 0px' }}>
 							<label className="border1">Apellido</label>
 
-							<input className="inpr border"
+							<input className="inprr border"
 								type="text"
 								name="apellido"
 								placeholder=" - - - - -"
@@ -131,7 +131,7 @@ export const Repartidor = () => {
 						<div style={{ margin: '10px 0px 0px 0px' }}>
 							<label className="border1">Ciudad</label>
 
-							<input className="inpr border"
+							<input className="inprr border"
 								type="text"
 								name="city"
 								placeholder=" - - - - -"
@@ -143,8 +143,8 @@ export const Repartidor = () => {
 						<div style={{ margin: '10px 0px 0px 0px' }}>
 							<label className="border1">Numero telefonico</label>
 							<br />
-							<input className="inpr border"
-								type="number"
+							<input className="inprr border"
+								type="text"
 								name="number"
 								placeholder=" 313...."
 								id="Number"
@@ -154,27 +154,33 @@ export const Repartidor = () => {
 						</div>
 					</div>
 				</div>
-				<br/>
-				<p className='parr' style={{color:'#3B4754'}}>Al registrarte estás aceptando nuestros términos y condiciones</p>
+				<br />
+				<p className='parr' style={{ color: '#3B4754' }}>Al registrarte estás aceptando nuestros términos y condiciones</p>
 				<button type="button" className="btn btn-outline-light reg">Registrarme</button>
 			</div>
-			<br/>
-			<div className="container" style={{ background: '#FFF4F4', padding: '20px ' }}>
-				<br/>
-			<h1 style={{ color: '#FF5C00', fontWeight: 'bold', fontSize: '40px', textAlign: 'center' }}>¿CÓMO EMPEZAR A REPARTIR?</h1>
 			<br />
-			<h3>
-				<h3 style={{color: '#FF5C00', fontWeight: 'bold'}}>01</h3> Descarga la aplicación, ingresa tus datos básicos y carga tus documentos
-			</h3>
-			<br />
-			<h3>
-				02 Indica el día y la hora que te quieres conectar
-			</h3>
-			<br />
-			<h3>
-				03 Conéctate para recibir tus pedidos y realizar tus primeras entregas
-			</h3>
-			</div>	
+			<div class="container" style={{ background: '#FFF4F4', padding: '60px ' }}>
+				<h1 style={{ color: '#FF5C00', fontWeight: 'bold', fontSize: '40px', textAlign: 'center' }}>¿CÓMO EMPEZAR A REPARTIR?</h1>
+				<br /><br />
+				<div class="row">
+					<div class="col-8">
+						<h3 style={{ fontWeight: 'lighter' }}>
+							<span style={{ color: '#FF5C00', fontWeight: 'bold' }}>01</span> Descarga la aplicación, ingresa tus datos básicos y carga tus documentos
+						</h3>
+						<br />
+						<h3>
+							<span style={{ color: '#FF5C00', fontWeight: 'bold' }}>02</span> Indica el día y la hora que te quieres conectar
+						</h3>
+						<br />
+						<h3>
+							<span style={{ color: '#FF5C00', fontWeight: 'bold' }}>03</span> Conéctate para recibir tus pedidos y realizar tus primeras entregas
+						</h3>
+					</div>
+					<div class="col-4"><i class="fa-regular fa-circle-check" style={{ fontSize: '200px', color: '#000000' }}></i></div>
+				</div>
+			</div>
+			<br/><br/>
+
 		</>
 	);
 }

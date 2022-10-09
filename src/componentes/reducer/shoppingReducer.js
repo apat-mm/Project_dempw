@@ -1,7 +1,7 @@
 import { TYPES } from "../actions/shoppingAction";
-import QbanoEspecial from '../img/QbanoEspecial.jpg'
-import QbanoRopa from '../img/QbanoRopa.jpg'
-import QbanoHawaiano from '../img/QbanoHawaiano.jpg'
+import QbanoEspecial from '../assets/img/QbanoEspecial.jpg'
+import QbanoRopa from '../assets/img/QbanoRopa.jpg'
+import QbanoHawaiano from '../assets/img/QbanoHawaiano.jpg'
 
 export const shoppingInitialState = {
     products: [
