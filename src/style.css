@@ -8,15 +8,50 @@
 }
 
 body {
-	background: #ffe2d8;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.home{
+	background-color: white;
+}
+
+.registro{
+	background-color: #FFE2D8;
+	margin-bottom: 50px;
+}
+
+.Qbano{
+	background-color: #FFE2D8;
+}
+
+.local{
+	background-color: #FFE2D8;
+}
+
+.Qbano h1{
+	margin: 0px;
+}
+
+
+
 .is{
 	font-size: 50px;
 	color: #eb5e1c;
 	font-weight: bold;
 	padding: 10px;
 	text-align: center;
+}
+
+.text_local{
+	color: #eb5e1c;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.nav{
+	background-color: #FF8351;
 }
 
 .is1{
@@ -329,19 +364,22 @@ body {
 	justify-content: center;
 }
 
+
 .formulario3 {
-	min-width: 600px;
-	min-height: 750px;
+	min-width: 70%;
 	margin: auto;
-	margin-top: 20px;
-	background: #fff;
+	margin-top: 50px;
+	background: #FFF4F4;
 	border-radius: 5px;
-	padding: 50px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	height: 20px;
 	width: 400px;
+	margin-bottom: 60px;
 }
 
+.contenedor_texto{
+	padding-left: 50px;
+	padding-bottom: 35px;
+}
 
 .formulario3 > div {
 	margin-bottom: 20px;
@@ -350,22 +388,21 @@ body {
 .formulario3 label {
 	display: block;
 	font-weight: 600;
-	font-size: 16px;
-	margin-bottom: 5px;
+	font-size: 20px;
 	color: #1f1f1f;
-	
+	margin-bottom: 15px;
 }
 
 .formulario3 input,
 .formulario3 textarea {
 	font-family: 'Open Sans', sans-serif;
-	width: 100%;
+	width: 50%;
 	border-radius: 5px;
 	border: 2px solid #e2e2e2;
 	font-size: 16px;
 	padding: 10px;
-	margin-bottom: 5px;
 	color: #1f1f1f;
+	margin-bottom: 35px;
 }
 
 .formulario3 input:focus {
@@ -378,6 +415,8 @@ body {
 	font-weight: 600;
 	font-size: 12px;
 }
+
+
 
 .formulario3 button[type="submit"] {
 	display: block;
@@ -394,7 +433,8 @@ body {
 	transition: .3s ease all;
 	width: 180px;
 	height: 50px;
-	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .formulario3 button[type="submit"]:hover {
@@ -558,4 +598,17 @@ body {
 
 .formulario5 button[type="submit"]:hover {
 	background: #eb5e1c;
+}
+
+.formulario7 {
+	min-width: 600px;
+	min-height: 430px;
+	margin: auto;
+	margin-top: 20px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	height: 20px;
+	width: 200px;
 }

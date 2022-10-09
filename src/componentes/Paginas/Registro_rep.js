@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../styles/local.css'
 
 export const Repartidor = () => {
 	const [inputName, changeInputName] = useState('');
