@@ -1,7 +1,7 @@
 import React from "react"
 import '../styles/footer.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faFacebook} from '@fortawesome/fontawesome-free-brands'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/fontawesome-free-brands'
 import { faTwitter } from "@fortawesome/fontawesome-free-brands";
 import { faInstagram } from "@fortawesome/fontawesome-free-brands";
 

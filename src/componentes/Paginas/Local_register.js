@@ -1,8 +1,8 @@
 import { Local } from "./Registro_local";
 
 const Local_register = () => {
-    return(
-        <Local/>
+    return (
+        <Local />
     )
 }
 

@@ -4,7 +4,7 @@ import QbanoHawaiano from '../../img/QbanoHawaiano.jpg'
 
 export const ProductsData = [
     {
-        id:1,
+        id: 1,
         price: 12900,
         amount: 0,
         name: "Sándwich Especial",

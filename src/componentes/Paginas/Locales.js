@@ -53,7 +53,7 @@ const Locales_dom = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

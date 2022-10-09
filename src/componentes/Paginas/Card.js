@@ -6,7 +6,7 @@ import '../styles/tarjetas.css'
 import { Link } from 'react-router-dom';
 
 function Card() {
-    return(
+    return (
         <div className="tarjetas">
 
             <div className="container justify-content-center">
@@ -14,7 +14,7 @@ function Card() {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="card text-center">
-                            <img 
+                            <img
                                 className="card-img-top"
                                 src={card_restaurante}
                                 alt=""
@@ -38,7 +38,7 @@ function Card() {
 
                     <div className="col-md-4">
                         <div className="card text-center">
-                            <img 
+                            <img
                                 className="card-img-top"
                                 src={card_comercio}
                                 alt=""
@@ -49,7 +49,7 @@ function Card() {
                                     <p className="card-text text-secondary">Accede a miles de usuarios y disfruta de una logística inmediata sin salir de tu tienda.</p>
                                 </div>
                             </div>
-                            
+
                             <div className="card-footer">
                                 <Link to="/registro_local">
                                     <div className="boton_registrar">
@@ -62,7 +62,7 @@ function Card() {
 
                     <div className="col-md-4">
                         <div className="card text-center">
-                            <img 
+                            <img
                                 className="card-img-top"
                                 src={card_repartidor}
                                 alt=""
@@ -76,9 +76,9 @@ function Card() {
 
                             <div className="card-footer">
                                 <Link to="/registro_repar">
-                                <div className="boton_registrar">
-                                    <a href="#!" className="btn btn-outline-light">¡Registrate!</a>
-                                </div>
+                                    <div className="boton_registrar">
+                                        <a href="#!" className="btn btn-outline-light">¡Registrate!</a>
+                                    </div>
                                 </Link>
                             </div>
                         </div>

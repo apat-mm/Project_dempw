@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Qbanoc.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import img_qbano from '../assets/img/qbano.png';
-// import QbanoBurguer from '../assets/img/QbanoBurguer.jpg';
 import QbanoEspecial from '../assets/img/QbanoEspecial.jpg';
 import QbanoHawaiano from '../assets/img/QbanoHawaiano.jpg';
 import QbanoRopa from '../assets/img/QbanoRopa.jpg';
@@ -12,13 +11,12 @@ import { FaStar } from 'react-icons/fa';
 import back2 from '../assets/img/back2.png'
 import { Link } from 'react-router-dom';
 import Navbar from '../Navegacion/Navbar';
-import ShoppingCart from '../ItemCart/shoppingCart';
 import Footer from '../Navegacion/Footer';
 
 const Qbano = () => {
     return (
         <>
-        <Navbar/>
+            <Navbar />
             <div className='Qbano'>
                 <div className='container'>
                     <div className='row mt-5'>
@@ -63,23 +61,6 @@ const Qbano = () => {
                             className='col-6 offset-md-1'
                             id='dos'>
                             <h2> <font color="#FF8351">Sándwiches</font> </h2>
-                            {/* <ShoppingCart/> */}
-                            {/* <div className='productos'>
-                                <img
-                                    src={QbanoBurguer}
-                                    alt=""
-                                    className='imagen_san'
-                                />
-                                <label className='titulos_san'>Sandwich Personal burguer</label>
-                                <p className='texto_san'>Carne Hamburguesa de Res y Cerdo (125g) a la plancha.</p>
-                                <label className='precios'>$ 16.900</label>
-                                <FontAwesomeIcon
-                                    icon={faCirclePlus}
-                                    transform="right-10"
-                                    color="#FF8351"
-                                    size='7px'
-                                />
-                            </div> */}
 
                             <div className='productos'>
                                 <img
@@ -137,7 +118,7 @@ const Qbano = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

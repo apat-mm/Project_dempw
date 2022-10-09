@@ -54,6 +54,17 @@ body {
 	justify-content:center;
 }
 
+.column {
+	float: left;
+	width: 50%;
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .box{
 	margin:30px;
 	padding:20px;

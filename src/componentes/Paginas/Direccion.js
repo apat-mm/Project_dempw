@@ -4,11 +4,11 @@ export const Address = () => {
     const [inputAddress, changeAddress] = useState('');
 
     const handleSubmit = (e) => {
-		e.preventDefault();
+        e.preventDefault();
 
-		console.log('Direccion enviada :D');
+        console.log('Direccion enviada :D');
         console.log((inputAddress));
-	}
+    }
 
     const handleInputAddress = (e) => {
         changeAddress(e.target.value);

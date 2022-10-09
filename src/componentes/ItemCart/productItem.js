@@ -1,15 +1,20 @@
 import React from 'react'
 
-const ProductItem = ({data,addToCart}) => {
-    let {id,price,name,img} = data
+const ProductItem = ({ data, addToCart }) => {
+  let { id, price, name, img } = data
   return (
-    <div style={{border:'thin solid gray', padding:'5px'}}>
-        <img style={{width:'250px', height:'auto'}} src={img}/>
-        <h4>{name}</h4>
+    <div className="card" style={{ width: '18rem' }}>
+      <img src={img} className="card-img-top" />
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
         <h5>${price}</h5>
-        <button onClick={() => addToCart(id)} >Añadir</button>
+        <p className="card-text" style={{ textAlign: 'justify' }}>En Sandwich Qbano se preparan los mejores alimentos, porque son preparados con los mejores ingredientes :D</p>
+        <button className="btn btn-dark" onClick={() => addToCart(id)} >Añadir</button>
+      </div>
     </div>
   )
 }
+
+
 
 export default ProductItem

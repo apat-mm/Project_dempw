@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import img_local from '../assets/img/registro_local.png'
 import '../styles/local.css'
 import insert_image from '../assets/img/insert_image.png'
-import insert_img from '../assets/img/icono.png'
-import back from '../assets/img/back.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
